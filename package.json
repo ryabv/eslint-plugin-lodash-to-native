@@ -1,5 +1,9 @@
 {
   "name": "eslint-plugin-lodash-to-native",
   "version": "1.0.0",
-  "main": "index.js"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryabv/eslint-plugin-lodash-to-native"
+  }
 }
