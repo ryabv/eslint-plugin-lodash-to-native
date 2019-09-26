@@ -6,9 +6,19 @@
 ```js
 return _.map(collection, fn);
 ```
-надо заменить на
+
+заменится на
 ```js
 return (Array.isArray(collection)) ?
 	collection.map(fn) :
 	_.map(collection, fn);
+```
+
+### Дополнительно
+
+Если `_` был переопределён, то правило не срабатает после переопределения
+```js
+var m1 = _.map([], fn); // здесь сработает
+_ = {map: () => []};
+var m2 = _.map([], fn); // здесь НЕ сработает
 ```
