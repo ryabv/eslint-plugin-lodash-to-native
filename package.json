@@ -1,0 +1,5 @@
+{
+  "name": "eslint-plugin-lodash-to-native",
+  "version": "1.0.0",
+  "main": "index.js"
+}
